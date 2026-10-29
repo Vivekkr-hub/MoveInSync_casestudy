@@ -6,7 +6,7 @@ This project investigates recurring complaints in public Google Play reviews, re
 
 ## Start here
 
-Read [the recommendations](MoveInSync_Recommendations_Vivek_Kumar.pdf) for priorities, engineering actions, acceptance criteria, owners, and a 60-day delivery plan. Keep the separately supplied PDF beside this README in the project root; it is not included in the original `submission-review.zip`. No dashboard is included in this package.
+Read [the recommendations](MoveInSync_Recommendations_Vivek_Kumar.pdf) for priorities, engineering actions, acceptance criteria, owners, and a 60-day delivery plan. Keep the separately supplied PDF beside this README in the project root; No dashboard is included in this package.
 
 **Recommendation:** prioritize reliable login and self-booking, keep optional feedback from blocking essential trip tasks, and establish an accountable complaint-resolution process. Investigate safety reports immediately, regardless of frequency. Reviews identify symptoms; internal telemetry and reproduction are needed to confirm causes.
 
