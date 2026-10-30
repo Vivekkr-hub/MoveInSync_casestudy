@@ -1,0 +1,38 @@
+[
+  {
+    "app": "MoveInSync",
+    "total_downloaded": 24431,
+    "period_start": "2025-11-01",
+    "period_end_exclusive": "2026-10-30",
+    "recent_review_records": 2758,
+    "average_review_rating": 3.841,
+    "low_rated_reviews": 746,
+    "low_rated_reviews_with_reply": 24,
+    "reply_coverage_percent": 3.22,
+    "empty_text_records": 1
+  },
+  {
+    "app": "Safetrax",
+    "total_downloaded": 1652,
+    "period_start": "2025-11-01",
+    "period_end_exclusive": "2026-10-30",
+    "recent_review_records": 110,
+    "average_review_rating": 2.891,
+    "low_rated_reviews": 56,
+    "low_rated_reviews_with_reply": 56,
+    "reply_coverage_percent": 100.0,
+    "empty_text_records": 0
+  },
+  {
+    "app": "Routematic",
+    "total_downloaded": 7226,
+    "period_start": "2025-11-01",
+    "period_end_exclusive": "2026-10-30",
+    "recent_review_records": 690,
+    "average_review_rating": 3.535,
+    "low_rated_reviews": 215,
+    "low_rated_reviews_with_reply": 215,
+    "reply_coverage_percent": 100.0,
+    "empty_text_records": 0
+  }
+]

@@ -1,0 +1,62 @@
+{
+ "com.routematic.employee": {
+  "title": "Routematic",
+  "score": 4.3378534,
+  "ratings": 35091,
+  "reviews": 7189,
+  "histogram": [
+   2682,
+   809,
+   2075,
+   5922,
+   23599
+  ],
+  "realInstalls": 1263262,
+  "updated": 1788967274
+ },
+ "in.mtap.iincube.safetrax.commuter": {
+  "title": "Safetrax Commuter",
+  "score": 4.7141085,
+  "ratings": 24209,
+  "reviews": 1646,
+  "histogram": [
+   951,
+   159,
+   320,
+   1992,
+   20782
+  ],
+  "realInstalls": 538710,
+  "updated": 1778679167
+ },
+ "com.proficio.commute": {
+  "title": "COMMUTE EMPLOYEE APP",
+  "score": 2.51,
+  "ratings": 610,
+  "reviews": 257,
+  "histogram": [
+   311,
+   60,
+   30,
+   30,
+   176
+  ],
+  "realInstalls": 71871,
+  "updated": 1793024016
+ },
+ "com.agiledge.myatom": {
+  "title": "NeOffice|Commute",
+  "score": 3.49,
+  "ratings": 257,
+  "reviews": 111,
+  "histogram": [
+   81,
+   7,
+   2,
+   30,
+   133
+  ],
+  "realInstalls": 34021,
+  "updated": 1790402132
+ }
+}

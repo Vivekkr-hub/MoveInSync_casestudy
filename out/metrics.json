@@ -1,0 +1,1031 @@
+{
+  "generated_utc": "2026-10-29T18:00:18.561759+00:00",
+  "as_of": "2026-10-29",
+  "period_start": "2025-11-01",
+  "period_end_exclusive": "2026-10-30",
+  "collection": {
+    "com.moveinsync.ets": {
+      "status": "exhausted",
+      "finished_at_utc": "2026-10-29T17:25:44.621653+00:00",
+      "age_days": 0
+    },
+    "in.mtap.iincube.safetrax.commuter": {
+      "status": "exhausted",
+      "finished_at_utc": "2026-10-29T17:28:28.515296+00:00",
+      "age_days": 0
+    },
+    "com.routematic.employee": {
+      "status": "exhausted",
+      "finished_at_utc": "2026-10-29T17:30:19.531388+00:00",
+      "age_days": 0
+    }
+  },
+  "store": {
+    "com.moveinsync.ets": {
+      "name": "MoveInSync employee",
+      "score": 4.639588,
+      "ratings": 115574,
+      "as_of": "2026-10-29T08:37:45+00:00"
+    },
+    "com.moveinsync.driver.lite": {
+      "name": "MoveInSync Partner Lite",
+      "score": 4.245098,
+      "ratings": 712,
+      "as_of": "2026-10-29T08:37:45+00:00"
+    },
+    "com.moveinsync.driver.dco": {
+      "name": "MoveInSync Driver Partner",
+      "score": 3.7017543,
+      "ratings": 57,
+      "as_of": "2026-10-29T08:37:45+00:00"
+    },
+    "field.moveinsync.ets": {
+      "name": "MoveInSync Field",
+      "score": 4.0833335,
+      "ratings": 24,
+      "as_of": "2026-10-29T08:37:45+00:00"
+    },
+    "in.mtap.iincube.safetrax.commuter": {
+      "name": "Safetrax Commuter",
+      "score": 4.7141085,
+      "ratings": 24209,
+      "as_of": "2026-10-29T08:37:45+00:00"
+    },
+    "com.routematic.employee": {
+      "name": "Routematic",
+      "score": 4.3378534,
+      "ratings": 35091,
+      "as_of": "2026-10-29T08:37:45+00:00"
+    }
+  },
+  "latest_review": "2026-10-28T20:46:55",
+  "last12": {
+    "reviews": 2758,
+    "avg": 3.841,
+    "low_rated": 746,
+    "one_star": 662,
+    "low_rated_percent": 27.05,
+    "low_with_reply": 24,
+    "reply_coverage_percent": 3.22,
+    "replies_predating_review": 9
+  },
+  "peers": {
+    "com.moveinsync.ets": {
+      "reviews": 2758,
+      "avg": 3.841,
+      "low_rated": 746,
+      "one_star": 662,
+      "low_rated_percent": 27.05,
+      "low_with_reply": 24,
+      "reply_coverage_percent": 3.22,
+      "replies_predating_review": 9
+    },
+    "in.mtap.iincube.safetrax.commuter": {
+      "reviews": 110,
+      "avg": 2.891,
+      "low_rated": 56,
+      "one_star": 51,
+      "low_rated_percent": 50.91,
+      "low_with_reply": 56,
+      "reply_coverage_percent": 100.0,
+      "replies_predating_review": 2
+    },
+    "com.routematic.employee": {
+      "reviews": 690,
+      "avg": 3.535,
+      "low_rated": 215,
+      "one_star": 175,
+      "low_rated_percent": 31.16,
+      "low_with_reply": 215,
+      "reply_coverage_percent": 100.0,
+      "replies_predating_review": 7
+    }
+  },
+  "last30": {
+    "reviews": 214,
+    "avg": 3.846,
+    "low_rated": 60,
+    "one_star": 53,
+    "low_rated_percent": 28.04,
+    "low_with_reply": 3,
+    "reply_coverage_percent": 5.0,
+    "replies_predating_review": 3
+  },
+  "net_rating_changes": null,
+  "theme_method": "Provisional keyword matches; separate from original LLM labels and AI-assisted sample check.",
+  "themes": [
+    {
+      "key": "stability",
+      "label": "Crashes, won't open, slow, breaks after update",
+      "suggested_owner": "App",
+      "reviews": 132,
+      "percent_of_low": 17.69
+    },
+    {
+      "key": "booking",
+      "label": "Booking, cancelling and schedule visibility",
+      "suggested_owner": "App",
+      "reviews": 106,
+      "percent_of_low": 14.21
+    },
+    {
+      "key": "driver_cab",
+      "label": "Late or missing cabs, driver behaviour",
+      "suggested_owner": "Ops",
+      "reviews": 85,
+      "percent_of_low": 11.39
+    },
+    {
+      "key": "tracking_tripinfo",
+      "label": "Live tracking, ETA and trip details",
+      "suggested_owner": "App",
+      "reviews": 76,
+      "percent_of_low": 10.19
+    },
+    {
+      "key": "support",
+      "label": "Helpdesk unreachable or unhelpful",
+      "suggested_owner": "Ops",
+      "reviews": 61,
+      "percent_of_low": 8.18
+    },
+    {
+      "key": "login_otp",
+      "label": "Login, OTP and forced re-login",
+      "suggested_owner": "App",
+      "reviews": 60,
+      "percent_of_low": 8.04
+    },
+    {
+      "key": "ux_redesign",
+      "label": "Confusing UI and disruptive redesigns",
+      "suggested_owner": "App",
+      "reviews": 54,
+      "percent_of_low": 7.24
+    },
+    {
+      "key": "routing",
+      "label": "Routing, pooling and pickup times",
+      "suggested_owner": "Ops",
+      "reviews": 50,
+      "percent_of_low": 6.7
+    },
+    {
+      "key": "forced_prompts",
+      "label": "Forced ratings, repeated pop-ups, notification spam",
+      "suggested_owner": "App",
+      "reviews": 31,
+      "percent_of_low": 4.16
+    },
+    {
+      "key": "no_show",
+      "label": "Unfair no-show marking",
+      "suggested_owner": "Ops",
+      "reviews": 20,
+      "percent_of_low": 2.68
+    },
+    {
+      "key": "safety",
+      "label": "Safety (SOS, women and night travel)",
+      "suggested_owner": "Ops",
+      "reviews": 14,
+      "percent_of_low": 1.88
+    },
+    {
+      "key": "boarding_checkin",
+      "label": "Boarding check-in (QR, OTP, seatbelt prompt)",
+      "suggested_owner": "App",
+      "reviews": 13,
+      "percent_of_low": 1.74
+    },
+    {
+      "key": "permissions",
+      "label": "Permissions, privacy and ads",
+      "suggested_owner": "App",
+      "reviews": 7,
+      "percent_of_low": 0.94
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2025-11",
+      "reviews": 160,
+      "avg": 3.688,
+      "low_rated": 48,
+      "one_star": 42,
+      "low_rated_percent": 30.0,
+      "low_with_reply": 9,
+      "reply_coverage_percent": 18.75,
+      "replies_predating_review": 1,
+      "partial_month": false
+    },
+    {
+      "month": "2025-12",
+      "reviews": 196,
+      "avg": 3.837,
+      "low_rated": 54,
+      "one_star": 43,
+      "low_rated_percent": 27.55,
+      "low_with_reply": 6,
+      "reply_coverage_percent": 11.11,
+      "replies_predating_review": 2,
+      "partial_month": false
+    },
+    {
+      "month": "2026-01",
+      "reviews": 211,
+      "avg": 3.768,
+      "low_rated": 60,
+      "one_star": 49,
+      "low_rated_percent": 28.44,
+      "low_with_reply": 3,
+      "reply_coverage_percent": 5.0,
+      "replies_predating_review": 0,
+      "partial_month": false
+    },
+    {
+      "month": "2026-02",
+      "reviews": 207,
+      "avg": 3.739,
+      "low_rated": 62,
+      "one_star": 57,
+      "low_rated_percent": 29.95,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "partial_month": false
+    },
+    {
+      "month": "2026-03",
+      "reviews": 196,
+      "avg": 3.985,
+      "low_rated": 46,
+      "one_star": 41,
+      "low_rated_percent": 23.47,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 2.17,
+      "replies_predating_review": 1,
+      "partial_month": false
+    },
+    {
+      "month": "2026-04",
+      "reviews": 292,
+      "avg": 4.034,
+      "low_rated": 64,
+      "one_star": 61,
+      "low_rated_percent": 21.92,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "partial_month": false
+    },
+    {
+      "month": "2026-05",
+      "reviews": 246,
+      "avg": 4.028,
+      "low_rated": 52,
+      "one_star": 49,
+      "low_rated_percent": 21.14,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "partial_month": false
+    },
+    {
+      "month": "2026-06",
+      "reviews": 273,
+      "avg": 3.56,
+      "low_rated": 92,
+      "one_star": 85,
+      "low_rated_percent": 33.7,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 1.09,
+      "replies_predating_review": 1,
+      "partial_month": false
+    },
+    {
+      "month": "2026-07",
+      "reviews": 285,
+      "avg": 4.014,
+      "low_rated": 66,
+      "one_star": 55,
+      "low_rated_percent": 23.16,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 1.52,
+      "replies_predating_review": 1,
+      "partial_month": false
+    },
+    {
+      "month": "2026-08",
+      "reviews": 242,
+      "avg": 3.653,
+      "low_rated": 77,
+      "one_star": 69,
+      "low_rated_percent": 31.82,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "partial_month": false
+    },
+    {
+      "month": "2026-09",
+      "reviews": 243,
+      "avg": 3.852,
+      "low_rated": 67,
+      "one_star": 60,
+      "low_rated_percent": 27.57,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "partial_month": false
+    },
+    {
+      "month": "2026-10",
+      "reviews": 207,
+      "avg": 3.845,
+      "low_rated": 58,
+      "one_star": 51,
+      "low_rated_percent": 28.02,
+      "low_with_reply": 3,
+      "reply_coverage_percent": 5.17,
+      "replies_predating_review": 3,
+      "partial_month": true
+    }
+  ],
+  "releases": [
+    {
+      "version": "11.0.2",
+      "reviews": 1,
+      "avg": 2.0,
+      "low_rated": 1,
+      "one_star": 0,
+      "low_rated_percent": 100.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.4.11",
+      "reviews": 1,
+      "avg": 4.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.4.12",
+      "reviews": 1,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.4.13",
+      "reviews": 1,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.4.29",
+      "reviews": 1,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.4.34",
+      "reviews": 1,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.5.17",
+      "reviews": 2,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.5.19",
+      "reviews": 2,
+      "avg": 2.5,
+      "low_rated": 1,
+      "one_star": 1,
+      "low_rated_percent": 50.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.5.20",
+      "reviews": 3,
+      "avg": 2.333,
+      "low_rated": 2,
+      "one_star": 2,
+      "low_rated_percent": 66.67,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.5.21",
+      "reviews": 3,
+      "avg": 1.0,
+      "low_rated": 3,
+      "one_star": 3,
+      "low_rated_percent": 100.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.5.4",
+      "reviews": 2,
+      "avg": 2.0,
+      "low_rated": 1,
+      "one_star": 1,
+      "low_rated_percent": 50.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "11.5.5",
+      "reviews": 1,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.1",
+      "reviews": 1,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.1.1",
+      "reviews": 1,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.1.2",
+      "reviews": 2,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.10",
+      "reviews": 81,
+      "avg": 4.123,
+      "low_rated": 16,
+      "one_star": 15,
+      "low_rated_percent": 19.75,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.10.1",
+      "reviews": 4,
+      "avg": 5.0,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.10.2",
+      "reviews": 100,
+      "avg": 3.89,
+      "low_rated": 25,
+      "one_star": 22,
+      "low_rated_percent": 25.0,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 4.0,
+      "replies_predating_review": 1,
+      "small_sample": false
+    },
+    {
+      "version": "12.11.0",
+      "reviews": 67,
+      "avg": 4.104,
+      "low_rated": 14,
+      "one_star": 13,
+      "low_rated_percent": 20.9,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.11.1",
+      "reviews": 99,
+      "avg": 4.172,
+      "low_rated": 18,
+      "one_star": 17,
+      "low_rated_percent": 18.18,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.11.2",
+      "reviews": 144,
+      "avg": 3.979,
+      "low_rated": 33,
+      "one_star": 32,
+      "low_rated_percent": 22.92,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.12.0",
+      "reviews": 69,
+      "avg": 4.0,
+      "low_rated": 15,
+      "one_star": 15,
+      "low_rated_percent": 21.74,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.12.2",
+      "reviews": 76,
+      "avg": 4.184,
+      "low_rated": 13,
+      "one_star": 12,
+      "low_rated_percent": 17.11,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.12.3",
+      "reviews": 113,
+      "avg": 4.027,
+      "low_rated": 25,
+      "one_star": 23,
+      "low_rated_percent": 22.12,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.13.0",
+      "reviews": 37,
+      "avg": 3.73,
+      "low_rated": 11,
+      "one_star": 10,
+      "low_rated_percent": 29.73,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 9.09,
+      "replies_predating_review": 1,
+      "small_sample": false
+    },
+    {
+      "version": "12.13.1",
+      "reviews": 95,
+      "avg": 3.684,
+      "low_rated": 29,
+      "one_star": 29,
+      "low_rated_percent": 30.53,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.13.2",
+      "reviews": 29,
+      "avg": 3.897,
+      "low_rated": 7,
+      "one_star": 7,
+      "low_rated_percent": 24.14,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.14.0",
+      "reviews": 38,
+      "avg": 3.368,
+      "low_rated": 15,
+      "one_star": 14,
+      "low_rated_percent": 39.47,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.14.1",
+      "reviews": 142,
+      "avg": 3.817,
+      "low_rated": 39,
+      "one_star": 35,
+      "low_rated_percent": 27.46,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.15.0",
+      "reviews": 83,
+      "avg": 4.036,
+      "low_rated": 19,
+      "one_star": 16,
+      "low_rated_percent": 22.89,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 5.26,
+      "replies_predating_review": 1,
+      "small_sample": false
+    },
+    {
+      "version": "12.16.0",
+      "reviews": 89,
+      "avg": 3.865,
+      "low_rated": 24,
+      "one_star": 18,
+      "low_rated_percent": 26.97,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.16.1",
+      "reviews": 38,
+      "avg": 3.526,
+      "low_rated": 13,
+      "one_star": 13,
+      "low_rated_percent": 34.21,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.17.0",
+      "reviews": 143,
+      "avg": 3.72,
+      "low_rated": 44,
+      "one_star": 40,
+      "low_rated_percent": 30.77,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.18.0",
+      "reviews": 65,
+      "avg": 4.108,
+      "low_rated": 13,
+      "one_star": 13,
+      "low_rated_percent": 20.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.18.1",
+      "reviews": 93,
+      "avg": 3.935,
+      "low_rated": 24,
+      "one_star": 22,
+      "low_rated_percent": 25.81,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.19.0",
+      "reviews": 122,
+      "avg": 3.77,
+      "low_rated": 37,
+      "one_star": 34,
+      "low_rated_percent": 30.33,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.2.1",
+      "reviews": 3,
+      "avg": 3.667,
+      "low_rated": 1,
+      "one_star": 1,
+      "low_rated_percent": 33.33,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.20.0",
+      "reviews": 88,
+      "avg": 3.784,
+      "low_rated": 26,
+      "one_star": 22,
+      "low_rated_percent": 29.55,
+      "low_with_reply": 3,
+      "reply_coverage_percent": 11.54,
+      "replies_predating_review": 3,
+      "small_sample": false
+    },
+    {
+      "version": "12.21.0",
+      "reviews": 4,
+      "avg": 3.25,
+      "low_rated": 2,
+      "one_star": 1,
+      "low_rated_percent": 50.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.3",
+      "reviews": 2,
+      "avg": 3.0,
+      "low_rated": 1,
+      "one_star": 1,
+      "low_rated_percent": 50.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.4",
+      "reviews": 8,
+      "avg": 3.5,
+      "low_rated": 3,
+      "one_star": 3,
+      "low_rated_percent": 37.5,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.5",
+      "reviews": 3,
+      "avg": 3.667,
+      "low_rated": 1,
+      "one_star": 1,
+      "low_rated_percent": 33.33,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.6",
+      "reviews": 126,
+      "avg": 3.762,
+      "low_rated": 35,
+      "one_star": 31,
+      "low_rated_percent": 27.78,
+      "low_with_reply": 6,
+      "reply_coverage_percent": 17.14,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.7",
+      "reviews": 38,
+      "avg": 3.5,
+      "low_rated": 14,
+      "one_star": 12,
+      "low_rated_percent": 36.84,
+      "low_with_reply": 3,
+      "reply_coverage_percent": 21.43,
+      "replies_predating_review": 1,
+      "small_sample": false
+    },
+    {
+      "version": "12.7.2",
+      "reviews": 93,
+      "avg": 3.624,
+      "low_rated": 31,
+      "one_star": 26,
+      "low_rated_percent": 33.33,
+      "low_with_reply": 4,
+      "reply_coverage_percent": 12.9,
+      "replies_predating_review": 1,
+      "small_sample": false
+    },
+    {
+      "version": "12.8",
+      "reviews": 21,
+      "avg": 3.857,
+      "low_rated": 5,
+      "one_star": 4,
+      "low_rated_percent": 23.81,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.8.2",
+      "reviews": 60,
+      "avg": 4.017,
+      "low_rated": 14,
+      "one_star": 8,
+      "low_rated_percent": 23.33,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 7.14,
+      "replies_predating_review": 1,
+      "small_sample": false
+    },
+    {
+      "version": "12.8.3",
+      "reviews": 105,
+      "avg": 3.676,
+      "low_rated": 33,
+      "one_star": 25,
+      "low_rated_percent": 31.43,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.8.4",
+      "reviews": 3,
+      "avg": 4.667,
+      "low_rated": 0,
+      "one_star": 0,
+      "low_rated_percent": 0.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": null,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.9.0",
+      "reviews": 31,
+      "avg": 4.548,
+      "low_rated": 3,
+      "one_star": 3,
+      "low_rated_percent": 9.68,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.9.1",
+      "reviews": 14,
+      "avg": 3.143,
+      "low_rated": 5,
+      "one_star": 5,
+      "low_rated_percent": 35.71,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 20.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.9.2",
+      "reviews": 48,
+      "avg": 3.917,
+      "low_rated": 13,
+      "one_star": 11,
+      "low_rated_percent": 27.08,
+      "low_with_reply": 1,
+      "reply_coverage_percent": 7.69,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "12.9.3",
+      "reviews": 8,
+      "avg": 3.5,
+      "low_rated": 3,
+      "one_star": 3,
+      "low_rated_percent": 37.5,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    },
+    {
+      "version": "12.9.4",
+      "reviews": 81,
+      "avg": 3.704,
+      "low_rated": 25,
+      "one_star": 22,
+      "low_rated_percent": 30.86,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": false
+    },
+    {
+      "version": "5.0.6",
+      "reviews": 1,
+      "avg": 1.0,
+      "low_rated": 1,
+      "one_star": 1,
+      "low_rated_percent": 100.0,
+      "low_with_reply": 0,
+      "reply_coverage_percent": 0.0,
+      "replies_predating_review": 0,
+      "small_sample": true
+    }
+  ],
+  "missing_version": 271,
+  "alerts": [
+    "Last 30 days: 5.0% of low-rated reviews have a reply; proposed target 90%. Replies do not establish resolution.",
+    "Version investigation: 12.13.1 has 29/95 one-star reviews in the reporting window. Association, not proof of regression.",
+    "Version investigation: 12.14.0 has 14/38 one-star reviews in the reporting window. Association, not proof of regression.",
+    "Version investigation: 12.16.1 has 13/38 one-star reviews in the reporting window. Association, not proof of regression.",
+    "Version investigation: 12.7 has 12/38 one-star reviews in the reporting window. Association, not proof of regression."
+  ],
+  "limitations": [
+    "Review timestamps used as supplied; timezone unspecified. As-of filters current records, not historical versions of edited reviews.",
+    "English/India request does not prove reviewer residence or complete coverage.",
+    "Reply coverage counts any nonempty reply; an older reply may predate edited review text.",
+    "Keyword tagging is multi-label and can misinterpret praise, negation and vague complaints."
+  ]
+}

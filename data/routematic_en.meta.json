@@ -1,0 +1,13 @@
+{
+  "app_id": "com.routematic.employee",
+  "requested_lang": "en",
+  "requested_country": "in",
+  "started_at_utc": "2026-10-29T17:29:40.881411+00:00",
+  "finished_at_utc": "2026-10-29T17:30:19.531388+00:00",
+  "status": "exhausted",
+  "unique_reviews_fetched_this_run": 7226,
+  "new_review_ids": 7226,
+  "total_stored_reviews": 7226,
+  "error": null,
+  "note": "Exhausted means the scraper returned no further pages, not proof that every Play review was retrieved. Previously stored reviews absent from this run are retained."
+}

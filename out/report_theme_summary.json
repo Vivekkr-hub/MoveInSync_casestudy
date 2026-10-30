@@ -1,0 +1,102 @@
+{
+  "reviews": 746,
+  "method": "AI-assisted classification; not human-validated",
+  "multi_label": true,
+  "label_sources": {
+    "additional_ai_assisted_label": 1,
+    "original_ai_label_unverified": 725,
+    "second_ai_assisted_check": 20
+  },
+  "themes": [
+    {
+      "theme": "generic_app",
+      "count": 146,
+      "percent_of_low_rated_reviews": 19.57
+    },
+    {
+      "theme": "stability",
+      "count": 137,
+      "percent_of_low_rated_reviews": 18.36
+    },
+    {
+      "theme": "tracking_tripinfo",
+      "count": 89,
+      "percent_of_low_rated_reviews": 11.93
+    },
+    {
+      "theme": "login_otp",
+      "count": 83,
+      "percent_of_low_rated_reviews": 11.13
+    },
+    {
+      "theme": "booking",
+      "count": 77,
+      "percent_of_low_rated_reviews": 10.32
+    },
+    {
+      "theme": "ux_redesign",
+      "count": 77,
+      "percent_of_low_rated_reviews": 10.32
+    },
+    {
+      "theme": "support",
+      "count": 65,
+      "percent_of_low_rated_reviews": 8.71
+    },
+    {
+      "theme": "driver_cab",
+      "count": 53,
+      "percent_of_low_rated_reviews": 7.1
+    },
+    {
+      "theme": "forced_prompts",
+      "count": 48,
+      "percent_of_low_rated_reviews": 6.43
+    },
+    {
+      "theme": "routing",
+      "count": 48,
+      "percent_of_low_rated_reviews": 6.43
+    },
+    {
+      "theme": "generic_service",
+      "count": 35,
+      "percent_of_low_rated_reviews": 4.69
+    },
+    {
+      "theme": "no_show",
+      "count": 15,
+      "percent_of_low_rated_reviews": 2.01
+    },
+    {
+      "theme": "boarding_checkin",
+      "count": 14,
+      "percent_of_low_rated_reviews": 1.88
+    },
+    {
+      "theme": "safety",
+      "count": 14,
+      "percent_of_low_rated_reviews": 1.88
+    },
+    {
+      "theme": "permissions",
+      "count": 7,
+      "percent_of_low_rated_reviews": 0.94
+    },
+    {
+      "theme": "positive_or_other",
+      "count": 6,
+      "percent_of_low_rated_reviews": 0.8
+    },
+    {
+      "theme": "trip_feedback",
+      "count": 1,
+      "percent_of_low_rated_reviews": 0.13
+    },
+    {
+      "theme": "unclear",
+      "count": 1,
+      "percent_of_low_rated_reviews": 0.13
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "low_rated_reviews": 746,
+  "matched_existing_labels": 745,
+  "needs_label": 1,
+  "classification": "Existing AI labels, not yet manually validated",
+  "themes": [
+    {
+      "theme": "generic_app",
+      "reviews_tagged": 147,
+      "percent_of_all_low_rated_reviews": 19.71
+    },
+    {
+      "theme": "stability",
+      "reviews_tagged": 135,
+      "percent_of_all_low_rated_reviews": 18.1
+    },
+    {
+      "theme": "tracking_tripinfo",
+      "reviews_tagged": 89,
+      "percent_of_all_low_rated_reviews": 11.93
+    },
+    {
+      "theme": "login_otp",
+      "reviews_tagged": 83,
+      "percent_of_all_low_rated_reviews": 11.13
+    },
+    {
+      "theme": "booking",
+      "reviews_tagged": 77,
+      "percent_of_all_low_rated_reviews": 10.32
+    },
+    {
+      "theme": "ux_redesign",
+      "reviews_tagged": 77,
+      "percent_of_all_low_rated_reviews": 10.32
+    },
+    {
+      "theme": "support",
+      "reviews_tagged": 65,
+      "percent_of_all_low_rated_reviews": 8.71
+    },
+    {
+      "theme": "driver_cab",
+      "reviews_tagged": 53,
+      "percent_of_all_low_rated_reviews": 7.1
+    },
+    {
+      "theme": "forced_prompts",
+      "reviews_tagged": 48,
+      "percent_of_all_low_rated_reviews": 6.43
+    },
+    {
+      "theme": "routing",
+      "reviews_tagged": 48,
+      "percent_of_all_low_rated_reviews": 6.43
+    },
+    {
+      "theme": "generic_service",
+      "reviews_tagged": 36,
+      "percent_of_all_low_rated_reviews": 4.83
+    },
+    {
+      "theme": "boarding_checkin",
+      "reviews_tagged": 15,
+      "percent_of_all_low_rated_reviews": 2.01
+    },
+    {
+      "theme": "no_show",
+      "reviews_tagged": 15,
+      "percent_of_all_low_rated_reviews": 2.01
+    },
+    {
+      "theme": "safety",
+      "reviews_tagged": 14,
+      "percent_of_all_low_rated_reviews": 1.88
+    },
+    {
+      "theme": "permissions",
+      "reviews_tagged": 7,
+      "percent_of_all_low_rated_reviews": 0.94
+    },
+    {
+      "theme": "positive_or_other",
+      "reviews_tagged": 6,
+      "percent_of_all_low_rated_reviews": 0.8
+    }
+  ]
+}

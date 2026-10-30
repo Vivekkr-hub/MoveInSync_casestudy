@@ -1,0 +1,13 @@
+{
+  "app_id": "in.mtap.iincube.safetrax.commuter",
+  "requested_lang": "en",
+  "requested_country": "in",
+  "started_at_utc": "2026-10-29T17:28:20.071355+00:00",
+  "finished_at_utc": "2026-10-29T17:28:28.515296+00:00",
+  "status": "exhausted",
+  "unique_reviews_fetched_this_run": 1652,
+  "new_review_ids": 1652,
+  "total_stored_reviews": 1652,
+  "error": null,
+  "note": "Exhausted means the scraper returned no further pages, not proof that every Play review was retrieved. Previously stored reviews absent from this run are retained."
+}
