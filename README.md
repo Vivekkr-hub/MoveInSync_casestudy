@@ -1,147 +1,128 @@
-# MoveInSync Play Store review analysis and tracker
+# MoveInSync: review evidence and ratings tracker
 
-**Forward Deployed Engineer assignment | Vivek Kumar | 29 October 2026**
-
-This project investigates recurring complaints in public Google Play reviews, recommends practical fixes, and provides a repeatable tracker for the question: **“How are our Play Store ratings?”**
+**Vivek Kumar — Forward Deployed Engineer case study**  
+Collection date: **29 October 2026**. Fixed reporting window: **1 November 2025–29 October 2026**.
 
 ## Start here
 
-Read [the recommendations](MoveInSync_Recommendations_Vivek_Kumar.pdf) for priorities, engineering actions, acceptance criteria, owners, and a 60-day delivery plan. Keep the separately supplied PDF beside this README in the project root; No dashboard is included in this package.
+Read [the recommendation PDF](MoveInSync_Recommendations_Vivek_Kumar.pdf) for the proposed priorities, owners, delivery sequence and success checks. This repository contains supporting evidence and a repeatable monitoring workflow. It does not implement fixes inside MoveInSync or claim access to internal telemetry.
 
-**Recommendation:** prioritize reliable login and self-booking, keep optional feedback from blocking essential trip tasks, and establish an accountable complaint-resolution process. Investigate safety reports immediately, regardless of frequency. Reviews identify symptoms; internal telemetry and reproduction are needed to confirm causes.
+| Baseline | Result |
+| --- | ---: |
+| Downloaded MoveInSync records, all dates | 24,431 |
+| Records in the reporting window | 2,758 |
+| Mean stars in that review sample | 3.841 |
+| 1–2-star records | 746 (27.05%) |
+| Low-rated records with any developer reply | 24 (3.22%) |
+| Replies predating the current review timestamp | 9 |
 
-### Baseline findings
+The supplied store snapshot reports approximately **4.64/5**. That score and the sample mean describe different populations and periods. Their difference does not demonstrate a historical decline. Public reviews identify symptoms and investigation priorities, not confirmed causes or prevalence across all employees.
 
-Analysis window: **1 November 2025–29 October 2026, inclusive**. “Low-rated” means **1–2 stars** throughout this README.
+## Quick start: reproduce offline
 
-| Measure | Result |
-| --- | --- |
-| Employee-app store snapshot | 4.64 / 5 from 115,574 ratings |
-| Downloaded reviews within the analysis window | 2,758 |
-| Mean rating in that review sample | 3.84 / 5 |
-| Low-rated reviews | 746 (27.05%) |
-| Low-rated reviews with a developer reply | 24 / 746 (3.22%) |
-| Leading report themes | Stability: 137; tracking/trip information: 89; login/OTP: 83; booking: 77 |
-
-The store score and review-sample average cover different populations and periods. Their difference does not establish a historical decline. Themes overlap, and reply presence does not establish resolution.
-
-## Quick start: reproduce the submission
-
-Extract the ZIP into a folder, preserving the `data/`, `labels/`, `validation/`, and `out/` directories. Open a terminal in that folder. Use Python 3.10 or newer as a recommended environment; no minimum-version compatibility matrix has been tested.
-
-The offline workflow uses the Python standard library and bundled files. It needs neither internet access nor an AI API key:
+Clone or download this repository, then open its folder in VS Code and open a terminal. Python 3.10+ is recommended.
 
 ```bash
-python tracker.py --offline --as-of 2026-10-29
+git clone https://github.com/Vivekkr-hub/MoveInSync_casestudy.git
+cd MoveInSync_casestudy
 ```
 
-Expected headline output: **2,758 reviews, 746 low-rated reviews, and 3.22% reply coverage**. The raw average is rounded to three decimal places in the tracker and two in the PDF.
-
-The command prints the baseline and investigation alerts, then writes:
-
-- `out/metrics.json`: store snapshots, review summaries, peer summaries, monthly and version breakdowns, provisional keyword themes, and alerts.
-- `out/reviews_tagged.csv`: low-rated employee-app reviews in the reporting window, with provisional keyword tags.
-
-These outputs are overwritten on each run. Preserve the supplied dataset before a live refresh if you want to reproduce this exact submission later. `--as-of` filters currently stored records; it cannot restore earlier versions of edited reviews.
-
-### Rebuild the supporting report outputs
-
-Run these commands against the supplied data:
+ The final analysis scripts and offline tracker use only the standard library; no API key or package installation is needed for these commands.
 
 ```bash
 python analyze_reviews.py
 python analyze_trends.py
 python finalize_labels.py
+python tracker.py --offline --as-of 2026-10-29
 ```
 
-They rebuild `out/baseline_summary.json`, `out/monthly_trends.csv`, `out/version_trends.csv`, `out/report_labels.json`, and `out/report_theme_summary.json`. These scripts use the fixed submission window, not a rolling reporting date. They do not regenerate the PDF or call an AI model.
+Expected tracker results include `reviews: 2758`, `low_rated: 746`, `avg: 3.841`, and `reply_coverage_percent: 3.22`. Investigation alerts are expected; they are not execution errors. The four commands were run successfully against the packaged data during final review.
 
-## Refresh or monitor ratings
+The scripts regenerate JSON/CSV outputs, not the designed PDF. Preserve this submission folder before refreshing live data if you need an unchanged baseline.
 
-For live collection, install the scraper dependency:
+## Refresh public data
+
+Only live collection requires `google-play-scraper==1.2.7`, pinned in `requirements.txt`. The version below is the version shown in the candidate's successful installation.
 
 ```bash
-python -m pip install google-play-scraper
+python -m pip install -r requirements.txt
 python tracker.py
 ```
 
-A live run snapshots six app listings and refreshes review datasets for MoveInSync employee, Safetrax Commuter, and Routematic. It fetches available review pages, merges by review ID, and updates existing review text and replies. It is **not a new-reviews-only download**. Previously stored reviews absent from a refresh are retained.
+The live tracker appends snapshots for the employee, driver and field apps plus two peers, then refreshes the three employee-app review datasets. It stops on a collection failure; existing outputs may then be from an earlier run. The downloader completed successfully on the candidate's Windows machine for all three apps. The combined live tracker has **not** been verified end-to-end.
 
-To analyze stored data using today's India date without making network requests:
-
-```bash
-python tracker.py --offline
-```
-
-The tracker uses a window beginning on the first day of the month 11 months before the reporting month and ending on the reporting date. `--as-of` is supported only with `--offline`.
-
-For an individual dataset refresh:
+To refresh just the employee reviews:
 
 ```bash
 python fetch_reviews.py com.moveinsync.ets data/ets_en.jsonl en in
 ```
 
-Check the exit status and collection metadata before using refreshed results. A failed tracker run may leave outputs from an earlier run; successful earlier collection steps may already have updated their files.
+The downloader paginates newest-first, retries requests, merges records by review ID and refreshes retrieved edits/replies. It retains previously stored records absent from a later run. `exhausted` means no further scraper pages, not proof of complete coverage. Metadata records collection time and status. Ctrl+C is handled by saving collected results; a forced process termination is different.
 
-### Investigation alerts
+To analyze stored data relative to today's India date:
 
-| Signal | Current rule |
-| --- | --- |
-| Keyword spike | At least 5 low-rated matches in the last 7 days and at least twice the prior 8-week weekly average; also flags when that prior count is zero |
-| Safety triage | Any safety keyword match in low-rated reviews from the last 7 days |
-| Version investigation | Any version in the reporting window with at least 30 reviews and more than 30% one-star reviews |
-| Reply coverage | Fewer than 90% of low-rated reviews from the last 30 days have a nonempty developer reply |
-| Collection freshness | Metadata missing, collection not exhausted, or collection older than 7 days |
-| Snapshot freshness | An available store snapshot is older than 7 days |
+```bash
+python tracker.py --offline
+```
 
-These are investigation signals, not confirmed defects or release regressions. Suggested use: weekly and after releases, with a person reviewing matching text and assigning follow-up. **Scheduling and notifications are not installed.**
-
-## How the evidence was produced
-
-Collection used `google-play-scraper`, newest-first pagination, `lang=en`, and `country=in`. The supplied datasets contain 24,431 MoveInSync, 1,652 Safetrax, and 7,226 Routematic unique review IDs. Collection metadata records timing and completion status. Pagination exhaustion means the scraper returned no more pages, not that every public review was captured. Reviewer names and profile images are removed; review text and audit IDs remain.
-
-Two separate classification methods serve different purposes:
-
-| Method | Purpose and source |
-| --- | --- |
-| Report labels | Fixed recommendation evidence in `out/report_labels.json`: 725 original unverified AI labels, 20 second AI-assisted checks, and 1 additional AI-assisted label |
-| Keyword tags | Repeatable monitoring through `themes.py`; written to tracker outputs and treated as provisional |
-
-The second AI-assisted check agreed exactly with the original theme sets on 16 of 20 records. This measures agreement, **not accuracy or independent human validation**. Despite its filename, `manual_check_20.csv` contains an AI-assisted check. The finalized report uses the copy under `validation/`. Multi-label counts must not be summed as unique affected users.
-
-Claude supplied initial scripts and labels. ChatGPT assisted with debugging, analysis, the second check, and report preparation. Python was run in VS Code, and sample labels were transferred through Excel. This README was subsequently revised with ChatGPT and its documented offline commands checked against the supplied files.
+`--as-of` requires `--offline`. It filters the current stored records by date; it cannot reconstruct historical versions of edited reviews. The fixed-report analysis scripts retain their submission dates and do not automatically become rolling reports.
 
 ## File guide
 
-| File or directory | Role |
+| File or folder | Purpose |
 | --- | --- |
-| `tracker.py` | Current live/offline monitoring entry point |
-| `fetch_reviews.py` | Review collection, updates, retry handling, and metadata |
-| `themes.py` | Provisional keyword rules and suggested owners |
-| `analyze_reviews.py` | Fixed-window baseline and basic data checks |
-| `analyze_trends.py` | Fixed-window monthly and version summaries |
-| `finalize_labels.py` | Reconciles original labels and checked records for the report |
-| `data/*.jsonl`, `data/*.meta.json` | Stored reviews and collection provenance |
-| `data/snapshots.csv` | Store scores, counts, and star histograms |
-| `data/app_meta.json`, `data/competitor_meta.json` | Supporting listing metadata |
-| `labels/` | Original AI labels and labeling instructions |
-| `validation/` | Earlier sample comparisons and the second 20-record check |
-| `out/` | Generated summaries, report labels, tagged reviews, and audit files |
-| `analyze_themes.py`, `prepare_label_check.py` | Intermediate audit/sample preparation; not required to reproduce the final report outputs |
-| `tracker old.py`, `report_data.py` | Legacy scripts; not part of the supported workflow above |
+| `tracker.py` | Rolling monitor: snapshot context, peers, monthly/version summaries, provisional keyword signals and freshness warnings |
+| `fetch_reviews.py` | Public review collection and refresh; writes JSONL plus collection metadata |
+| `themes.py` | Original keyword taxonomy; provisional matches, not validated root causes |
+| `analyze_reviews.py` | Fixed-window data checks and peer baseline |
+| `analyze_trends.py` | Fixed-window monthly and exact-version summaries; flags samples under 30 |
+| `finalize_labels.py` | Joins original AI labels to current text, applies the checked sample and labels the extra trip-feedback record |
+| `analyze_themes.py` | Intermediate audit of original AI labels; not the final report counts |
+| `prepare_label_check.py` | Reproduces the 20-record sample; refuses to overwrite an existing sample file |
+| `data/*.jsonl`, `data/*.meta.json` | Freshly collected reviews and collection metadata |
+| `data/snapshots.csv` | Timestamped store snapshot inherited from the supplied project; live tracker appends new observations |
+| `data/app_meta.json`, `data/competitor_meta.json` | Original project metadata; not refreshed by the revised tracker |
+| `labels/labeled.json`, `labels/instructions.md` | Original AI labels and taxonomy instructions; preserved for provenance |
+| `validation/manual_check_20.csv` | Second AI-assisted check, despite the historical filename; not a human gold standard |
+| Other `validation/` files | Inherited model/rule comparisons; not independently validated accuracy results |
+| `out/baseline_summary.json` | Fixed-window peer summary |
+| `out/monthly_trends.csv`, `out/version_trends.csv` | Fixed-window trend tables |
+| `out/report_labels.json`, `out/report_theme_summary.json` | Consolidated AI-assisted evidence used in the report |
+| `out/metrics.json` | Tracker results, collection freshness, limitations and alerts |
+| `out/reviews_tagged.csv` | Low-rated reviews in the tracker window with provisional keyword tags |
+| `out/theme_audit.csv`, `out/theme_summary_provisional.json` | Intermediate original-label audit; superseded for report use by consolidated outputs |
 
-`report_data.py` requires pandas and an absent input, `data/most_relevant_en_in.json`. It references an earlier dashboard workflow and should not be used to reproduce this submission. Earlier validation and provisional theme files are retained for provenance; the final report themes are in `out/report_theme_summary.json`.
+If retained in the repository, `tracker old.py` and `report_data.py` are legacy files; use the commands above for the final analysis. Do not upload your local virtual environment.
 
-## Verification and limits
+## Two classification methods: do not mix them
 
-The documented fixed-date tracker run and three supporting report commands were rerun successfully against a scratch copy of the supplied archive during this README update. The tracker reproduced 2,758 reviews, 746 low-rated reviews, and 3.22% reply coverage. Live collection was not rerun during this update; the combined live refresh remains unverified end-to-end in this review.
+**Report:** 746 low-rated records; 725 original unverified AI labels, 20 second-pass AI-assisted classifications and one additional trip-feedback label. Final counts include stability 137, tracking 89, login/OTP 83, booking 77 and repeated/blocking prompts 48. Multiple labels are possible, so counts cannot be added as unique users. The second check agreed exactly on 16/20 label sets. That is agreement, not 80% accuracy. Ambiguous cases remain, and the sample does not establish population accuracy.
 
-- Written reviews are self-selected and do not measure the proportion of all users affected. English/India request parameters do not establish reviewer residence or complete geographic coverage. iOS is outside scope.
-- Review dates are used as supplied; their timezone is unspecified, and reviews may be edited. Historical as-of reporting is not an immutable archive.
-- Snapshot differences are **net changes** that may include additions, edits, removals, and source corrections, not a distribution of new ratings.
-- Nine MoveInSync developer replies predate the current review timestamps. A nonempty reply may not address the current complaint.
-- Most report labels remain unverified. Keyword tags may misread negation, praise, and ambiguous text. Neither method establishes technical root causes.
-- Peer comparisons are descriptive; different clients, users, sample sizes, and review practices prevent a controlled ranking.
-- October is partial, version information is missing for 271 of 2,758 records, and small version samples require caution.
+**Monitor:** regex matching in `themes.py`. It can misclassify praise, negation, vague language and words used in a different context. Owner mappings are routing suggestions. Inspect the source text before action, particularly safety signals. Keyword counts can differ from the report's AI-label counts.
 
-Public sources: [MoveInSync employee](https://play.google.com/store/apps/details?id=com.moveinsync.ets), [Safetrax Commuter](https://play.google.com/store/apps/details?id=in.mtap.iincube.safetrax.commuter), and [Routematic](https://play.google.com/store/apps/details?id=com.routematic.employee).
+## Monitoring rules and proposed cadence
+
+- Run weekly and after app releases; scheduling is not installed.
+- Investigate a keyword with at least five low-rated mentions in seven days and at least twice its previous eight-week weekly average (including a zero baseline).
+- Inspect versions with at least 30 reviews and more than 30% one-star reviews in the reporting window. This is an association, not a causal regression test.
+- Reply presence below a proposed 90% threshold triggers a queue review; it does not measure timely acknowledgement or resolution.
+- Collections and available store snapshots older than seven days are flagged. Missing collection metadata is flagged. Read freshness warnings before interpreting alerts.
+- Histogram changes between the last two snapshots are **net changes**, potentially affected by edits, removals and source corrections. They are not the distribution or average of new ratings.
+
+## Sources and limitations
+
+Collection requested English reviews from the India storefront:
+
+- [MoveInSync employee](https://play.google.com/store/apps/details?id=com.moveinsync.ets&hl=en&gl=IN)
+- [Safetrax Commuter](https://play.google.com/store/apps/details?id=in.mtap.iincube.safetrax.commuter&hl=en&gl=IN)
+- [Routematic](https://play.google.com/store/apps/details?id=com.routematic.employee&hl=en&gl=IN)
+
+These settings do not establish reviewer residence or guarantee every returned text is English. Reviews are self-selected. Peer samples differ substantially (2,758 / 110 / 690 in the window), and their users and client contexts are not controlled. Dates are used as supplied, with unspecified review timezone. October is partial. 271 MoveInSync records lack version information. One collected record has empty text. No duplicate/missing review IDs, missing dates or invalid star scores were found in the collected files.
+
+Reply coverage counts any nonempty reply. Old replies can remain after an edited review. No response-time or resolution claim follows from coverage alone. Snapshot counts and downloaded review counts are separate source measures. No promised star-rating uplift is inferred from complaint counts.
+
+## Tools, contribution and validation
+
+Claude supplied initial code and AI labels. ChatGPT assisted with code corrections, analysis, a second AI-assisted sample check, consolidation, documentation and recommendation drafting. The candidate collected data and ran scripts in VS Code; Excel was used to transfer the sample classifications. There is no independent human label-validation claim.
+
+Final offline checks reproduced the baseline, consolidated label counts, monthly totals and missing-version count. Earlier tracker checks covered empty summaries and stale-data warnings. Live scraping depends on an unofficial library and upstream responses; the combined live refresh remains unverified. The proposed product fixes require internal investigation, tests and controlled rollout.
